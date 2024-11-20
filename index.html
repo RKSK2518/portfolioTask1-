@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: rgb(237, 237, 246);
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      margin: 0;
+    }
+
+    /* Style for the "<Renuka kapadi/>" text with calligraphy font */
+    .intro-text {
+    font-family: 'Dancing Script', cursive; /* Calligraphy-like font */
+    text-align: left;
+    font-size: 5em;
+    margin: 10px 0;
+    color: black; /* Change text color to black */
+  }
+
+    /* Navigation buttons */
+    .btn-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+
+    .btn-container .btn {
+      display: inline-block;
+      background-color: #ab1ab0;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-left: 10px;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
+    }
+
+    .btn-container .btn:hover {
+      background-color: hsl(309, 95%, 60%);
+    }
+
+    /* About Section with white box */
+    .about-section {
+      background-color: white;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-section .text {
+      width: 60%;
+    }
+
+    .about-section h2 {
+      font-size: 2em;
+      color: #2980b9;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .about-section .image {
+      width: 35%;
+      text-align: right;
+    }
+
+    .about-section img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Contact and Resume Section as buttons below About Me */
+    .contact-section {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .contact-section a {
+      display: inline-block;
+      background-color: #b212b8;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+
+    .contact-section a:hover {
+      background-color: #b212b8;
+    }
+
+    /* Projects Section */
+    .projects-section {
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px 10px;
+      margin-top: 40px;
+      border-radius: 8px;
+    }
+
+    .projects-section h2 {
+      font-size: 2em;
+      color: #2980b9;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .projects-section ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    .projects-section ul li {
+      font-size: 1em;
+      margin: 10px 0;
+    }
+
+    /* Skills Section with square boxes */
+    .skills-section {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .skill-box {
+      background-color: #2980b9;
+      color: white;
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1.2em;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .skill-box:hover {
+      transform: scale(1.05);
+    }
+
+    .skill-box h3 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    .skill-box p {
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <!-- Left corner text: <renuka/> -->
+  <p class="intro-text">&lt;Renuka Kapadi&gt;</p>
+
+  <!-- Navigation Buttons (Home, Skills, Projects, Resume, Contact) -->
+  <div class="btn-container">
+    <a href="#home" class="btn">Home</a>
+    <a href="#skills" class="btn">Skills</a>
+    <a href="#projects" class="btn">Projects</a>
+    <a href="#contact" class="btn">Contact</a>
+  </div>
+
+  <!-- About Section with white box and image -->
+  <div class="about-section" id="home">
+    <div class="text">
+      <h2>Hello all i'm RENUKA</h2>
+      <p>
+        Hello! I am Renuka, a passionate web developer with a keen interest in creating dynamic and interactive websites. <br>
+        I have experience in both front-end development, and I love solving complex problems with creative solutions.<br>
+        In my spare time, I enjoy learning new technologies and improving my skills to stay up to date with industry trends.
+      </p>
+    </div>
+    <div class="image">
+      <img src="C:\Users\renuk\Downloads\increase-economic-official-concept-pro-vector-illustration_678466-6.avif" alt="About Me Image">
+    </div>
+  </div>
+
+  <!-- Contact and Resume Section as buttons below About Me -->
+  <div class="contact-section" id="contact">
+    <a href="mailto:renuka@example.com">Contact Me</a>
+    <a href="resume.pdf" target="_blank">Resume</a>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="projects-section" id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://github.com/yourusername/project1" target="_blank">Project 1 - Web App</a></li>
+      <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2 - E-Commerce Site</a></li>
+      <li><a href="https://github.com/yourusername/project3" target="_blank">Project 3 - Portfolio Website</a></li>
+    </ul>
+  </div>
+
+  <!-- Skills Section with square boxes moved below Projects -->
+  <div class="skills-section" id="skills">
+    <h2>Skills</h2>
+    <div class="skill-box">
+      <h3>HTML & CSS</h3>
+      <p>Building responsive, accessible, and visually appealing websites.</p>
+    </div>
+    <div class="skill-box">
+      <h3>JavaScript</h3>
+      <p>Creating interactive elements and enhancing user experience with JavaScript.</p>
+    </div>
+    <div class="skill-box">
+      <h3>React</h3>
+      <p>Developing dynamic and high-performance user interfaces with React.</p>
+    </div>
+    <div class="skill-box">
+      <h3>Node.js</h3>
+      <p>Building scalable back-end applications using Node.js and Express.</p>
+    </div>
+    <div class="skill-box">
+      <h3>MongoDB</h3>
+      <p>Managing databases and building data-driven applications with MongoDB.</p>
+    </div>
+  </div>
+</body>
+</html>
